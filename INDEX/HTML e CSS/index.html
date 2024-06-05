@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="javascript" href="index.js"></link>
+
     <link rel="icon" href="imagens/4.png" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>San Charles Pet</title>
@@ -36,10 +38,28 @@
 
   
     </section>
-    <div id="banner">
-      <img src="imagens/banner-home.png" />
-    </div> 
 
+<!-- carrossel -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="imagens/banner-home.png" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="imagens/banner2.png" style="width: 100%" />
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    
      <section id="caixas">
       <div class="birds">
         <img src="imagens/passaros.png" 
@@ -221,5 +241,6 @@
 </div>
       </section>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
